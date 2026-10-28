@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Azhariya — женская одежда, Астана</title>
+<meta name="description" content="Azhariya — женская одежда, которая подчёркивает твою индивидуальность. Астана, Казахстан.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap" id="home">
+  <header class="hdr">
+    <a class="logo" href="#home" aria-label="На главную" data-bind="brand" data-upper></a>
+    <nav class="nav-d" aria-label="Основная навигация">
+      <a href="#home">Главная</a>
+      <a href="#collection">Коллекция</a>
+      <a href="#about">О бренде</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="hdr-r">
+      <a class="cart" href="#collection" aria-label="Корзина (демо)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      </a>
+      <a class="btn sm" href="#contact">Связаться</a>
+      <button type="button" class="share-ic" data-share aria-label="Поделиться сайтом"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></svg></button>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mnav">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </header>
+  <nav class="mnav" id="mnav" aria-label="Мобильная навигация">
+    <a href="#home">Главная</a>
+    <a href="#collection">Коллекция</a>
+    <a href="#about">О бренде</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero-t">
+      <p class="eyebrow" data-bind="eyebrow"></p>
+      <h1 class="h-xl" id="hero-h" data-bind="heroTitle"></h1>
+      <p class="lead" data-bind="heroSub"></p>
+      <div><a class="btn" href="#collection">Смотреть коллекцию</a></div>
+    </div>
+    <div class="ph hero-p" role="img" aria-label="Место для фотографии: модель в современном образе на городской улице">
+      <span>Фото · editorial, модель в образе на городской улице, естественный свет</span>
+    </div>
+  </section>
+</div>
+
+<section class="sec" id="collection" aria-labelledby="col-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="h-lg" id="col-h" data-bind="collTitle"></h2>
+        <p class="sub" data-bind="collSub"></p>
+      </div>
+      <div class="cats" id="cats" role="group" aria-label="Категории"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Товары, названия и цены — примерные данные для демонстрации. Замените их реальным ассортиментом бренда.</p>
+  </div>
+</section>
+
+<section class="story sec" id="about" aria-labelledby="story-h">
+  <div class="wrap">
+    <div class="story-g">
+      <div class="ph tone3 story-p" role="img" aria-label="Место для фотографии: fashion-портрет модели">
+        <span>Фото · портрет, модель в образе, нейтральный городской фон</span>
+      </div>
+      <div class="story-t">
+        <p class="eyebrow">О бренде</p>
+        <h2 class="h-lg" id="story-h" data-bind="aboutTitle"></h2>
+        <p class="story-q" data-bind="aboutText"></p>
+        <dl class="facts" id="contact">
+          <div class="fact"><dt>Бренд</dt><dd data-bind="brand"></dd></div>
+          <div class="fact"><dt>Город</dt><dd data-bind="city"></dd></div>
+          <div class="fact"><dt>Адрес магазина</dt><dd data-bind="address"></dd></div>
+          <div class="fact"><dt>Телефон</dt><dd data-bind="phone"></dd></div>
+          <div class="fact"><dt>Instagram</dt><dd data-bind="instagram"></dd></div>
+        </dl>
+        <p class="call" data-bind="callText"></p>
+        <div class="cta">
+          <a class="btn" href="#contact">Написать нам</a>
+          <a class="btn ghost" id="ig-link" href="#contact">Instagram</a>
+          <button type="button" class="btn ghost" data-share>Поделиться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-row">
+      <a class="logo" href="#home" data-bind="brand" data-upper></a>
+      <nav class="ftr-nav" aria-label="Навигация в подвале">
+        <a href="#home">Главная</a>
+        <a href="#collection">Коллекция</a>
+        <a href="#about">О бренде</a>
+        <a href="#contact">Контакты</a>
+        <button type="button" class="adm-link" data-share>Поделиться</button>
+        <button type="button" class="adm-link" id="adm-open">Вход для администратора</button>
+      </nav>
+    </div>
+    <p class="copy" data-bind="copy"></p>
+  </div>
+</footer>
+
+<div class="ovl" id="adm" hidden>
+  <div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-labelledby="adm-h">
+    <button type="button" class="x" id="adm-close" aria-label="Закрыть">×</button>
+
+    <div id="adm-login">
+      <h2 id="adm-h">Вход для администратора</h2>
+      <form id="adm-form" novalidate>
+        <label for="adm-pin">Пароль — 6 цифр</label>
+        <input id="adm-pin" class="pin" name="pin" type="password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" maxlength="6" aria-describedby="adm-err">
+        <p class="err" id="adm-err" role="alert"></p>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+      <p class="hint">Пароль проверяется только в браузере и не защищает данные. Для реальной админки нужна проверка на сервере.</p>
+    </div>
+
+    <div id="adm-panel" hidden>
+      <h2 id="adm-h2">Редактор сайта</h2>
+      <p class="hint">Изменения применяются сразу и сохраняются только в этом браузере: другие посетители их не увидят.</p>
+      <div class="fields" id="fields"></div>
+      <p class="hint status" id="adm-status" role="status" aria-live="polite"></p>
+      <div class="acts">
+        <button type="button" class="btn ghost" id="adm-reset">Сбросить к исходным</button>
+        <button type="button" class="btn ghost" id="adm-close2">Закрыть</button>
+        <button type="button" class="btn" id="adm-logout">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ovl" id="shr" hidden>
+  <div class="dlg" id="shr-dlg" role="dialog" aria-modal="true" aria-labelledby="shr-h">
+    <button type="button" class="x" id="shr-close" aria-label="Закрыть">×</button>
+    <h2 id="shr-h">Поделиться сайтом</h2>
+    <label for="shr-url">Ссылка на сайт</label>
+    <div class="copy-row">
+      <input id="shr-url" class="inp" type="text" readonly>
+      <button type="button" class="btn sm" id="shr-copy">Скопировать</button>
+    </div>
+    <p class="hint" id="shr-status" role="status" aria-live="polite"></p>
+    <div class="share-links" id="shr-links">
+      <a class="btn ghost sm" id="sh-tg" target="_blank" rel="noopener" href="#">Telegram</a>
+      <a class="btn ghost sm" id="sh-wa" target="_blank" rel="noopener" href="#">WhatsApp</a>
+      <a class="btn ghost sm" id="sh-vk" target="_blank" rel="noopener" href="#">ВКонтакте</a>
+      <a class="btn ghost sm" id="sh-fb" target="_blank" rel="noopener" href="#">Facebook</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
